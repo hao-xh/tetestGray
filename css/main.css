@@ -1,0 +1,528 @@
+/* 所有页面公用样式 */
+html {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+    -webkit-filter: grayscale(1);
+}
+
+/* 所有元素之间的上下间距均为当前元素的margin-top产生 */
+body,
+html {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    color: #000;
+    font-family: 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.marginRight0 {
+    margin-right: 0 !important;
+}
+
+.header {
+    border-bottom: 1px solid red;
+    background: rgb(48, 71, 105);
+    background: -webkit-linear-gradient(top, rgb(89, 123, 161), rgb(0, 14, 41));
+    background: -moz-linear-gradient(top, rgb(89, 123, 161), rgb(0, 14, 41));
+    background: -o-linear-gradient(top, rgb(89, 123, 161), rgb(0, 14, 41));
+    background: linear-gradient(top, rgb(89, 123, 161), rgb(0, 14, 41));
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.footer {
+    /* background-color: #c8c8c8;
+    border-top: 1px solid #cecccd;
+    color: #646464; */
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgb(200, 199, 199);
+    color: rgb(100, 100, 100);
+}
+
+/* 白色背景的导航 */
+.header_white {
+    border-bottom: 1px solid red;
+    background: #fff;
+    color: rgb(51, 51, 51);
+    position: relative;
+    z-index: 1;
+}
+
+.footer_white {
+    background-color: rgb(248, 248, 248);
+    border-top: 1px solid rgb(200, 199, 199);
+    color: rgb(100, 100, 100);
+}
+
+/* 空白背景的导航（产品页用） */
+.header_preduct {
+    background-color: transparent;
+    background: -webkit-linear-gradient(top, transparent, transparent);
+    background: -moz-linear-gradient(top, transparent, transparent);
+    background: -o-linear-gradient(top, transparent, transparent);
+    background: linear-gradient(top, transparent, transparent);
+    color: #fff;
+    border-bottom: 0;
+}
+
+.footer_preduct {
+    background-color: rgb(51, 51, 51);
+    color: rgb(234, 235, 235);
+}
+
+/* 新闻文字hover效果 */
+.newText:hover {
+    color: #ff3333;
+}
+
+/* 新闻图片hover放大效果 */
+.zoomImg img {
+    transition: 1s transform ease;
+}
+
+.zoomImg img:hover {
+    transform: scale(1.1);
+}
+
+/* 新闻图片内有元素hover放大效果 */
+.zoomImgWrap img {
+    transition: 1s all ease;
+}
+
+.zoomImgWrap .text {
+    transition: .3s all ease;
+}
+
+.zoomImgWrap:hover .img {
+    transform: scale(1.2);
+}
+
+.zoomImgWrap:hover .text {
+    bottom: 0 !important;
+}
+
+
+/* 测试代码start */
+.test-log {
+    color: #000;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* 测试代码end */
+/* @media screen and (max-width: 960px) {
+    body, html {
+        width: 960px;
+        color: green;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    body, html {
+        width: 100%;
+        color: yellow;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body, html {
+        color: red;
+    }
+} */
+
+@font-face {
+    font-family: VideoJs;
+    src: url("./../css/video-js-5.20.2-font/VideoJS.eot");
+    src: url("./../css/video-js-5.20.2-font/VideoJS.eot?#iefix") format("embedded-opentype"),
+         url("./../css/video-js-5.20.2-font/VideoJS.ttf") format("ttf"),
+         url("./../css/video-js-5.20.2-font/VideoJS.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* 字体 */
+@font-face {
+    font-family: 'arial';
+    src: url('./../css/font/Arial.ttf') format('truetype');
+}
+
+/* ----------------------------图标---------------------------- Start */
+@font-face {
+    font-family: 'iconfont_home';
+    src: url('./../css/icon/iconfont.eot');
+    src: url('./../css/icon/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('./../css/icon/iconfont.woff2') format('woff2'),
+        url('./../css/icon/iconfont.woff') format('woff'),
+        url('./../css/icon/iconfont.ttf') format('truetype'),
+        url('./../css/icon/iconfont.svg#iconfont') format('svg');
+}
+
+/* 记得添加class="iconfont_home" */
+.iconfont_home {
+    font-family: "iconfont_home" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 5px;
+}
+
+/* ----------------------------图标---------------------------- Etart */
+
+/* ----------------------------首页及首页二级页公用样式---------------------------- Start */
+/* 页面右侧内容 */
+.homeRightContent {
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+/* 更多按钮（复用） */
+.homeMore {
+    float: right;
+    color: rgb(136, 136, 136);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.homeMore .iconfont_home {
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+/* 标题-红色底部线通用css start*/
+.homeRedLineTitle {
+    color: #333;
+    font: 20px/40px '';
+    height: 41px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    position: relative;
+}
+
+.homeRedLineTitle .redLine {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    background-color: red;
+}
+
+.homeRedLineTitle span {
+    float: left;
+}
+
+/* 标题-红色底部线通用css end*/
+
+
+/* 标题-右侧红线通用CSS start */
+.RightRedLineTitle {
+    width: 100%;
+    height: 18px;
+}
+
+.RightRedLineTitle strong {
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 500;
+    float: left;
+}
+
+.RightRedLineTitle span {
+    float: left;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(231, 39, 42);
+    margin-right: 15px;
+}
+
+/* 标题-右侧红线通用CSS end */
+
+/* 产品块公用样式start */
+.homeProduct {
+    margin-top: 30px;
+}
+
+.homeProduct .title {
+    color: rgb(255, 51, 51);
+}
+
+.homeProduct .title .redLine {
+    width: 80px;
+}
+
+.homeProduct .appList1 {
+    width: 300px;
+    margin-top: 9px;
+}
+
+.homeProduct .appList1 li {
+    width: 258px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 15px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.homeProduct .appList1 .pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.homeProduct .appList1 .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.homeProduct .appList1 .name {
+    font: 14px/18px '';
+    color: rgb(51, 51, 51);
+}
+
+.homeProduct .appList1 .text {
+    margin-top: 3px;
+    color: rgb(153, 153, 153);
+    font: 12px/19px '';
+}
+
+.homeProduct .appList1 .text * {
+    display: inline-block;
+}
+
+.homeProduct .appList1 .text a {
+    margin-left: 10px;
+}
+
+.homeProduct .recomm {
+    width: 268px;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.homeProduct .recomm .title {
+    color: rgb(51, 51, 51);
+    font: 14px/25px '';
+}
+
+.homeProduct .recomm .appList2 {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-bottom: 9px;
+}
+
+.homeProduct .recomm li {
+    color: rgb(153, 153, 153);
+    font: 12px/24px '';
+    float: left;
+    margin-right: 20px;
+}
+
+.homeProduct .appList3 {
+    margin-top: 18px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.homeProduct .appList3 li {
+    width: 100px;
+    text-align: center;
+}
+
+.homeProduct .appList3 li img {
+    width: 100%;
+    height: 100%;
+}
+
+.homeProduct .appList3 .pic {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.homeProduct .appList3 .name {
+    color: rgb(153, 153, 153);
+    font: 12px/31px '';
+}
+
+/* 产品块公用样式 end */
+
+/* 长广告 start */
+.homeAdvertOfLength {
+    margin-top: 30px;
+    width: 960px;
+}
+
+.homeAdvertOfLength a,
+.homeAdvertOfLength img {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+/* 新闻列表视频列表右侧广告 */
+.listHomeAdver {
+    width: 300px;
+}
+
+.listHomeAdver .item {
+    width: 100%;
+    height: 225px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.listHomeAdver .item a,
+.listHomeAdver .item a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.listHomeAdver .item .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    margin: 0;
+    cursor: pointer;
+}
+
+.listHomeAdver .item .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(204, 204, 204);
+    font-size: 12px;
+    color: #fff;
+    padding: 1px 4px;
+}
+
+/* ----------------------------首页及首页二级页公用样式---------------------------- Etart */
+
+/* ----------------------------悬浮窗 公共样式---------------------------- Start */
+.suspension {
+    width: 19px;
+    height: 149px;
+    border: 1px solid #e5e5e5;
+    position: fixed;
+    right: 10px;
+    bottom: 35px;
+    z-index: 99999;
+    background: #fff;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.suspension .item {
+    margin: 0;
+    font-size: 18px;
+    margin-top: 18px;
+    color: #000;
+    cursor: pointer;
+}
+.suspension .goToTop {
+    font-weight: bold;
+}
+
+.suspension .item:hover {
+    color: green;
+}
+.suspension .goToTop:hover {
+    color: rgb(255, 51, 51);
+}
+
+.suspension .weixin {
+    width: 135px;
+    height: 145px;
+    padding: 10px 8px 13px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    left: -160px;
+    top: -45px;
+    background: #fff;
+    display: none;
+}
+
+.suspension .weixin img {
+    width: 114px;
+    height: 114px;
+    margin: 8px 0 8px 11px;
+}
+
+.suspension .weixin span {
+    font-size: 13px;
+}
+
+.suspension .iphone {
+    width: 135px;
+    height: 145px;
+    padding: 10px 8px 13px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    left: -160px;
+    top: -45px;
+    background: #fff;
+    display: none;
+}
+
+.suspension .iphone img {
+    width: 129px;
+    height: 129px;
+    margin-left: 3px;
+}
+
+.suspension .iphone span {
+    font-size: 13px;
+}
+
+.suspension .x1:hover+.weixin {
+    display: block;
+}
+
+.suspension .x2:hover+.iphone {
+    display: block;
+}
+
+/* ----------------------------悬浮窗 公共样式---------------------------- End */
+
+
+
+/* 底部的几个外链页面 */
+.bottomLinkPage {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.bottomLinkPage p {
+    text-indent: 2em;
+    color: #989898;
+    line-height: 28px;
+    width: 1030px;
+    margin: auto;
+    margin-bottom: 20px;
+}

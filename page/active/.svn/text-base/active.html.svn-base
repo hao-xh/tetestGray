@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 活动页 -->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../../css/reset.css">
+    <link rel="stylesheet" href="./../../css/main.css">
+    <link rel="stylesheet" href="./active.css">
+    <script src="./../../js/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- header start -->
+    <div class="header_white"></div>
+    <!-- header end -->
+
+    <div class="activePage">
+        <!-- banner图 -->
+        <div class="banner">
+            <div class="pic"><img src="./../../image/activePage_banner.png" alt="央广视讯 活动"></div>
+        </div>
+        <!-- 内容 -->
+        <div class="content">
+            <div class="item_wrap clear">
+                <!-- 进行中活动颜色 class+= active_swing_icon;
+                     已结束活动颜色 class+= active_over_icon-->
+                <div class="item active_swing_icon">
+                    <a href="javaScript: void 0;">
+                        <div class="pic"><img src="./../../image/t-home-cnr.png" alt=""></div>
+                        <div class="text clear">
+                            <div class="l fl">
+                                <div class="h3">全球华语网络主播大赛</div>
+                                <p>活动时间：2016-04--2016-12</p>
+                            </div>
+                            <div class="r fr">
+                                <div class="icon">进行中</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item active_over_icon">
+                    <a href="javaScript: void 0;">
+                        <div class="pic"><img src="./../../image/t-home-cnr.png" alt=""></div>
+                        <div class="text clear">
+                            <div class="l fl">
+                                <div class="h3">全球华语网络主播大赛</div>
+                                <p>活动时间：2016-04--2016-12</p>
+                            </div>
+                            <div class="r fr">
+                                <div class="icon">已结束</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item active_over_icon">
+                    <a href="javaScript: void 0;">
+                        <div class="pic"><img src="./../../image/t-home-cnr.png" alt=""></div>
+                        <div class="text clear">
+                            <div class="l fl">
+                                <div class="h3">全球华语网络主播大赛</div>
+                                <p>活动时间：2016-04--2016-12</p>
+                            </div>
+                            <div class="r fr">
+                                <div class="icon">进行中</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item active_over_icon">
+                    <a href="javaScript: void 0;">
+                        <div class="pic"><img src="./../../image/t-home-cnr.png" alt=""></div>
+                        <div class="text clear">
+                            <div class="l fl">
+                                <div class="h3">全球华语网络主播大赛</div>
+                                <p>活动时间：2016-04--2016-12</p>
+                            </div>
+                            <div class="r fr">
+                                <div class="icon">已结束</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <div class="footer_white"></div>
+    <!-- footer end -->
+
+</body>
+
+<script src="./../../js/main.js"></script>
+<script>
+    $(function () {
+        // 页脚/页头引入
+        importHeadFoot_white();
+        // 返回顶部
+        // $('.goToTop').bind('click', goToTop);
+    });
+</script>
+
+</html>

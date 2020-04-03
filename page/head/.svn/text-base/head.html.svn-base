@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="./../head/head.css">
+
+
+<script src="./../head/data.js"></script>
+
+<div class="test-log"></div>
+<div class="head">
+    <!-- <div class="back"></div> -->
+    <div class="wrap">
+        <div class="logo">
+            <img src="./../../image/head-logo.png" alt="">
+        </div>
+        <!-- 导航数据填充，焦点class+="focus" -->
+        <ul class="nav navPC">
+            <!-- <li data-index="0">首页</li>
+            <li data-index="1">产品及服务</li> -->
+        </ul>
+    </div>
+</div>
+
+<script src="./../head/head.js"></script>
+<script>
+    var curShowErNavObj; // 记录当前显示二级导航的li
+    $(function () {
+        $('.head .nav li').on('mouseenter', hideAllErNav);
+        $('.head .nav li').on('mouseleave', showErNav);
+    });
+
+    function hideAllErNav(e) {
+        var e = e || window.event;
+        var tar = e.tar || e.srcElement;
+        // 储存当前鼠标hover时的二级导航元素
+        var oCurHoverEr = $(tar).parents('li').find('.erjiNavWrap')[0];
+        // 储存当前页显示的二级导航元素
+        var oCurShowEr = $('.head .nav .focus .erjiNavWrap')[0];
+        if (!$(tar).parents('li').hasClass('focus') && oCurShowEr && oCurHoverEr) {
+            curShowErNavObj = $(oCurShowEr).parents('.focus');
+            $('.head .nav li').removeClass('focus');
+        }
+    }
+
+    function showErNav() {
+        if (curShowErNavObj && curShowErNavObj[0]) {
+            curShowErNavObj.addClass('focus');
+            curShowErNavObj = null;
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./../foot/foot.css">
+
+<div class="foot">
+    <div class="wrap">
+        <ul class="row1">
+            <li><a class="newText" href="./../aboutUs/aboutUs.html">关于央广视讯</a><i>|</i></li>
+            <li><a class="newText" href="./../contactUs/contactUs.html">联系我们</a><i>|</i></li>
+            <li><a class="newText" href="./../recruit/recruit.html">央广视讯招聘</a><i>|</i></li>
+            <!-- <li><a class="newText" href="javaScript: void 0;">网站地图</a><i>|</i></li> -->
+            <li><a class="newText" href="./../partners/partners.html">合作伙伴</a><i>|</i></li>
+            <li><a class="newText" href="./../preductAndServe/preductAndServe.html">业务合作</a><i>|</i></li>
+            <li><a class="newText" href="./../serverxieyi/serverxieyi.html">用户服务协议</a><i>|</i></li>
+            <li><a class="newText" href="./../youxi/youxi.html">游戏纠纷处理流程</a><i>|</i></li>
+            <li><a class="newText" href="./../jianhu/jianhu.html">未成年人家长监护服务说明</a></li>
+        </ul>
+        <ul class="row2">
+            <li>信息网络传播视听节目许可证0102002号</li>
+            <li>中华人民共和国信息产业部互联网备案许可：京ICP备09027930号</li>
+            <li>京公网安备11010602070038号</li>
+        </ul>
+        <ul class="row3">
+            <li>网络文化经营许可证：京网文【2014】0359—059号</li>
+        </ul>
+        <ul class="row4">
+            <li>央广视讯传媒有限公司 版权所有（C）</li>
+        </ul>
+    </div>
+</div>

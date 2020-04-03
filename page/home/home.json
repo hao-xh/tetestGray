@@ -1,0 +1,18 @@
+{
+    "swiper": [{
+        "image": "./../../image/swiperPic1.png",
+        "text": "第一个1111111111"
+    },{
+        "image": "./../../image/swiperPic2.png",
+        "text": "第二个2222222222"
+    },{
+        "image": "./../../image/swiperPic3.png",
+        "text": "第三个33333333333"
+    },{
+        "image": "./../../image/swiperPic4.png",
+        "text": "第四个44444444444"
+    },{
+        "image": "./../../image/swiperPic5.png",
+        "text": "第五个5555555555"
+    }]
+}
